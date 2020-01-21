@@ -90,3 +90,7 @@ The high confidence [variants](https://github.com/Illumina/PlatinumGenomes/blob/
 The features used for the VQSR, GARFIELD-NGS, Hard-Filter and FNVC can be download from: <br>
 
 https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
+
+Reproducibility of Results
+------------
+The results can be reproduced by using the scripts in the 'Evaluation' folder, the model in the 'models' folder and the [data](https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV) described before
