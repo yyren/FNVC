@@ -2,12 +2,9 @@
 """
 Created on Sun Jan 20 21:26:27 2019
 
-@author: ryy
+@author: yyren
 """
 
-'''
-Using logistic regression
-'''
 
 from sklearn.metrics import confusion_matrix, accuracy_score, matthews_corrcoef, roc_auc_score, roc_curve,precision_recall_curve, auc
 #from scikitplot.metrics import plot_roc, plot_calibration_curve
@@ -28,13 +25,13 @@ parser = argparse.ArgumentParser(
   description='extract the complex region' )
 
 parser.add_argument('--test_TP_file', type=str, default="testing_tp_file.record", 
-            help="path to the tensor file contains the variant information, default:testing_tp_file.record")
+            help="path to the tensor file contains the true positive variants, default:testing_tp_file.record")
 
 parser.add_argument('--test_FP_file', type=str, default="testing_fp_file.record", 
-            help="path to the tensor file contains the variant information, default:testing_fp_file.record")
+            help="path to the tensor file contains the false positive variants, default:testing_fp_file.record")
 
-parser.add_argument('--out_file', type=str, default="./", 
-            help="path to the tensor file contains the variant information, default:./")
+parser.add_argument('--out_file', type=str, default="vqsr_statistic_results.txt", 
+            help="statistic result files, default:vqsr_statistic_results.txt")
             
 args = parser.parse_args()
 

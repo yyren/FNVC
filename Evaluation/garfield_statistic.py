@@ -2,12 +2,9 @@
 """
 Created on Sun Jan 20 21:26:27 2019
 
-@author: hill103
+@author: yyren
 """
 
-'''
-Using logistic regression
-'''
 
 from sklearn.metrics import confusion_matrix, accuracy_score, matthews_corrcoef, roc_auc_score, roc_curve,precision_recall_curve, auc
 from scikitplot.metrics import plot_roc, plot_calibration_curve
@@ -29,16 +26,16 @@ parser = argparse.ArgumentParser(
   description='extract the complex region' )
 
 parser.add_argument('--test_TP_file', type=str, default="testing_tp_file.record", 
-            help="path to the tensor file contains the variant information, default:testing_tp_file.record")
+            help="path to the tensor file contains the true positive variants, default:testing_tp_file.record")
 
 parser.add_argument('--test_FP_file', type=str, default="testing_fp_file.record", 
-            help="path to the tensor file contains the variant information, default:testing_fp_file.record")
+            help="path to the tensor file contains the false positive variants, default:testing_fp_file.record")
             
-parser.add_argument('--out_file', type=str, default="./", 
-            help="path to the tensor file contains the variant information, default:./")
+parser.add_argument('--out_file', type=str, default="garfield_results_statistic.txt", 
+            help="the statistic results file, default: garfield_results_statistic.txt")
             
-parser.add_argument('--sample_tag', type=str, default="./", 
-            help="sample name in the 10th col of vcf, default:./")
+parser.add_argument('--sample_tag', type=str, default="HG001", 
+            help="sample name in the 10th col of vcf, default: HG001")
 parser.add_argument('--model_type', type=str, default="snv", 
             help="snv/indel, default:snv")
 args = parser.parse_args()
