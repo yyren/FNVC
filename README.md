@@ -11,9 +11,9 @@ Introduction
   
   We show that FNVC demonstrates the most accurate performance with the highest AUC, Matthews correlation coefficient (MCC), and F1-minor score. Furthermore, it is the only method that consistently eliminates more false-positive variants than the loss of true-positive variants.<br>
 
-![AUC](https://github.com/yyren/FNVC/tree/master/Pictures/Comparison_of_different_methods.png)<br>
+![AUC](Pictures/Comparison_of_different_methods.png)<br>
 
-![](https://github.com/yyren/FNVC/tree/master/Pictures/Measurement_using_MCC_OFO.png)<br>
+![](Pictures/Measurement_using_MCC_OFO.png)<br>
 
 
 Usage
