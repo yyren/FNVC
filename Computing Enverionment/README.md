@@ -6,17 +6,13 @@ Users can download the singularity image from our docker image sofware responsib
 Environment for variant calling
 ------------
 
-https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
-
-![](https://github.com/yyren/FNVC/raw/master/Picture/performance_accross_genome.bmp)<br>
+![](Pictures/Variant_calling_docker_image.png)<br>
 
 
 Environment for FNVC & The environment for comparing different methods in the paper
 ------------
 
-https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
-
-![](https://github.com/yyren/FNVC/raw/master/Picture/performance_accross_genome.bmp)<br>
+![](Pictures/FNVC_docker_image.png)<br>
 
 
 OR manually install the requirements with the version equal or later:<br>
