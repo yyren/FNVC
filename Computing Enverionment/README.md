@@ -3,15 +3,18 @@ FNVC provides a singularity docker image with all dependent environments. This m
 
 Users can download the singularity image from our docker image sofware responsibility<br>
 
-Environment for variant calling
+Docker image for variant calling
 ------------
 http://bmap.sjtu.edu.cn/softstorage/details/11
 
+![](Pictures/Variant_calling_docker_image.png)<br>
 
-Environment for FNVC & The environment for comparing different methods in the paper
+
+Docker image for FNVC
 ------------
 http://bmap.sjtu.edu.cn/softstorage/details/10
 
+![](../Pictures/FNVC_docker_image.png)<br>
 
 OR manually install the requirements with the version equal or later:<br>
 

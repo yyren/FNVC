@@ -90,7 +90,7 @@ The details of the data can be found in the folder 'Data for Training and Testin
 The training and testing data used for the leave one individual out cross validation study are available in the: <br>
 
 http://bmap.sjtu.edu.cn/datastorage/main/17<br>
-![](Pictures/Data_location.png)<br>
+![](../Pictures/Data_location.png)<br>
 
 ### High-confident variants in vcf format
 
