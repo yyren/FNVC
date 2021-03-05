@@ -5,14 +5,12 @@ Users can download the singularity image from our docker image sofware responsib
 
 Environment for variant calling
 ------------
-
-![](Pictures/Variant_calling_docker_image.png)<br>
+http://bmap.sjtu.edu.cn/softstorage/details/11
 
 
 Environment for FNVC & The environment for comparing different methods in the paper
 ------------
-
-![](Pictures/FNVC_docker_image.png)<br>
+http://bmap.sjtu.edu.cn/softstorage/details/10
 
 
 OR manually install the requirements with the version equal or later:<br>
