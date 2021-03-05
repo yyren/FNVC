@@ -73,7 +73,7 @@ OR manually install the requirements with the version equal or later:<br>
 * FindBin
 * other customized models (###.pm) are released in FNVC folder
 
-Introduction
+Data
 ------------
 Sequencing alignment, marking duplicates, and local realignment were performed using the BWA-MEM, Dedup, and Realigner that are integrated into Sentieon.<br>
 The germline variants were identified using GATK HaplotypeCaller(version 4.0.11, with default parameters) and Mutect2 (Integrated in GATK version 4.1.9 with default parameters) and Varscan2 (version 2.3.9 with default parameters, except where --min-coverage 3, --p-value 0.10, --min-var-freq 0.01).<br>
@@ -82,8 +82,6 @@ The variant calling process can be found in the 'Variant Calling/variant_calling
 
 The true-positive variants and false-positive variants were defined based on the consistency of the variant calls with the high confident variant calls from NIST’s GIAB consortium (version 3.3.2) using RTG-vcfeval method and regardless of the zygosity differences via setting the argument --squash_ploidy.<br>
 
-Data
-------------
 The details of the data can be found in the folder 'Data for Training and Testing'.<br>
 
 ### Leave one individual out cross validation study data
