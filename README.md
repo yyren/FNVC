@@ -38,12 +38,12 @@ Users can download the singularity image from our docker image sofware responsib
 
 ### Docker image for variant calling
 
-https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
+![](Pictures/Variant_calling_docker_image.png)<br>
 
 
 ### Docker image for FNVC
 
-https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
+![](Pictures/FNVC_docker_image.png)<br>
 
 OR manually install the requirements with the version equal or later:<br>
 
@@ -87,13 +87,14 @@ The details of the data can be found in the folder 'Data for Training and Testin
 ### Leave one individual out cross validation study data
 The training and testing data used for the leave one individual out cross validation study are available in the: <br>
 
-https://drive.google.com/open?id=17AOz1SChj22PTlHGPTLNlBrgjk5ExYHV <br>
+http://bmap.sjtu.edu.cn/datastorage/main/17 <br>
+![](Pictures/Data_location.png)<br>
 
 ### High-confident variants in vcf format
 
 The high-confident variants released by GIAB can be download from: <br>
 
-ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release <br>
+https://github.com/genome-in-a-bottle/giab_latest_release <br>
 
 ### High-confident variants in fastq or bam format
 The raw sequencing data used in the paper are available in the: <br>
