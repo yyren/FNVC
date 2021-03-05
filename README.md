@@ -9,7 +9,7 @@ Introduction
 
   Unfortunately, ~1.3-41.3 times true-positive variants (~3,700-79,000) were eliminated simultaneously. We present a filtering protocol FNVC based on gradient boosting decision tree-based method to eliminate ~73-90% false-positive variants and decrease the loss of true-positive variants from tens of thousands to less than 1000 average.<br> 
   
-  We show that FNVC demonstrates the most accurate performance with the highest AUC, Matthews correlation coefficient (MCC), and F1-minor score. Furthermore, it is the only method that consistently eliminates more false-positive variants than the loss of true-positive variants.<br>
+  We show that FNVC demonstrates the most accurate performance with the highest AUC, Matthews correlation coefficient (MCC), and F1-minor score. Furthermore, it is the only method that consistently eliminates more false-positive variants than the loss of true-positive variants (log OFO <0).<br>
 
 ![AUC](Pictures/Comparison_of_different_methods.png)<br>
 
