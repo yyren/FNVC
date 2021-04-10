@@ -17,7 +17,7 @@ Data
 ------------
 ### Leave one individual out cross validation study data
 The training and testing data used for the leave one individual out cross validation study are available in the: <br>
-http://bmap.sjtu.edu.cn/datastorage/main/17<br>
+http://bmap.sjtu.edu.cn/datastorage/main/24<br>
 ![](../Pictures/Data_location.png)<br>
 
 The high-confident variants released by GIAB can be download from: <br>

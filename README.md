@@ -1,7 +1,7 @@
 # FNVC
 FNVC: Filtering on next-generation WGS variant calls<br>
 
-It is freely available for academic use, but the copyrights of all the original gold-standard data belong to the GIAB organizations.<br>
+It is freely available for academic use. However, users should consider the licensing of GIAB database about the original gold-standard variants and sequenced results.<br>
 
 Introduction
 ------------
@@ -37,13 +37,13 @@ Computational Environment
 Users can download the singularity image from our docker image sofware responsibility<br>
 
 ### Docker image for variant calling
-http://bmap.sjtu.edu.cn/softstorage/details/11
+http://bmap.sjtu.edu.cn/softstorage/details/21
 
 ![](Pictures/Variant_calling_docker_image.png)<br>
 
 
 ### Docker image for FNVC
-http://bmap.sjtu.edu.cn/softstorage/details/10
+http://bmap.sjtu.edu.cn/softstorage/details/22
 
 ![](Pictures/FNVC_docker_image.png)<br>
 
@@ -87,7 +87,7 @@ The details of the data can be found in the folder 'Data for Training and Testin
 ### Leave one individual out cross validation study data
 The training and testing data used for the leave one individual out cross validation study are available in the: <br>
 
-http://bmap.sjtu.edu.cn/datastorage/main/17<br>
+http://bmap.sjtu.edu.cn/datastorage/main/24<br>
 ![](Pictures/Data_location.png)<br>
 
 ### High-confident variants in vcf format

@@ -5,14 +5,14 @@ Users can download the singularity image from our docker image sofware responsib
 
 Docker image for variant calling
 ------------
-http://bmap.sjtu.edu.cn/softstorage/details/11
+http://bmap.sjtu.edu.cn/softstorage/details/21
 
 ![](Pictures/Variant_calling_docker_image.png)<br>
 
 
 Docker image for FNVC
 ------------
-http://bmap.sjtu.edu.cn/softstorage/details/10
+http://bmap.sjtu.edu.cn/softstorage/details/22
 
 ![](../Pictures/FNVC_docker_image.png)<br>
 
