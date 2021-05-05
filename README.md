@@ -44,7 +44,7 @@ perl FNVC_Main.pl \
 	-tp TP.vcf -fp FP.vcf \
 	-snpm gatk_snp.model -im gatk_indel.model \
 
-### FNVC retraining
+### Retraining
 retrain a new model
 perl FNVC_Main.pl \
 	-t retrain -c gatk \
