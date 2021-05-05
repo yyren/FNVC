@@ -58,7 +58,7 @@ Computational Environment
 ------------
 Users can download the singularity image from our docker image sofware responsibility<br>
 
-### setting the path
+### Setting the path
 Change the path in the the second line of 'FNVC_Main.pl'
 
 * Default seting: BEGIN {push @INC, "/home/ubuntu/project/FNVC"};
