@@ -18,23 +18,50 @@ Introduction
 
 Usage
 ------------
+### Standardize VCF format
+bash Standardize_vcf_format.sh \
+	 variant_calling_image.sif \
+	 sample.bam \
+	 input.vcf \
+	 reference.fa \
+	 SM_ID \
+	 output.vcf
+
+SM_ID: the SM tag in the bam file, eg. HG001.<br>
+In single thread, this step will take ~1 hour and required >35G memory for WGS sequencing data at 30x coverage.<br>
+We recommend users divide the VCF file into multiple files and run this script in parallel.<br>
+
 ### Filtering
 perl FNVC_Main.pl \
 	-t annotation -c gatk \
-	-snpm gatk_snp.model im gatk_indel.model\
+	-snpm gatk_snp.model -im gatk_indel.model\
 	-i input.vcf -o /home/ubuntu/output.vcf
 
-### Incremental training
-Incremental training with pre-trained model and additional data
+### Incremental learning
+Incremental learning with pre-trained model and additional data
 perl FNVC_Main.pl \
 	-t retrain -c gatk \
 	-tp TP.vcf -fp FP.vcf \
 	-snpm gatk_snp.model -im gatk_indel.model \
-	-o /home/ubuntu/gatk_retrained
+
+### FNVC retraining
+retrain a new model
+perl FNVC_Main.pl \
+	-t retrain -c gatk \
+	-tp gatk_example_tp.vcf -fp gatk_example_fp.vcf \
+	-o /example/incremental/gatk_retrain
+
+-o: prefix name of the retrained model <br>
+
 
 Computational Environment
 ------------
 Users can download the singularity image from our docker image sofware responsibility<br>
+
+### setting the path
+Change the path in the the second line of 'FNVC_Main.pl'
+
+* Default seting: BEGIN {push @INC, "/home/ubuntu/project/FNVC"};
 
 ### Docker image for variant calling
 http://bmap.sjtu.edu.cn/softstorage/details/21
@@ -72,6 +99,7 @@ OR manually install the requirements with the version equal or later:<br>
 * Getopt::Long
 * FindBin
 * other customized models (###.pm) are released in FNVC folder
+
 
 Data
 ------------

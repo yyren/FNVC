@@ -26,8 +26,10 @@ def load_from_pickle(filename='temp', root_path='./'):
     '''
     Load pickle file defaultly from current dir
     '''
-    printx("loading {} from {}".format(filename, root_path))
-    f = open(path.join(root_path, filename), 'rb')
+    #printx("loading {} from {}".format(filename, root_path))
+    #f = open(path.join(root_path, filename), 'rb')
+    printx("loading {}".format(filename))
+    f = open(filename, 'rb')
     var = pickle.load(f)
     f.close()
     return var

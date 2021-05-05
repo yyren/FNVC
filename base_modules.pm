@@ -2,7 +2,7 @@
 
 #vcf_modules.pm
 
-package vcf_modules;
+package base_modules;
 require Exporter;
 
 @ISA=qw(Exporter);

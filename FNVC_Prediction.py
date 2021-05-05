@@ -37,16 +37,16 @@ parser.add_argument('--workpath', type=str, default='./',
 args = parser.parse_args()
 
 workpath = args.workpath
-feature_path = path.join(workpath, args.in_file)
+in_file = args.in_file
 model_file = args.model 
 result_file = args.out_file
 
-mut_feat = pd.read_csv(feature_path, header=None, sep=' ', low_memory=False).values
+mut_feat = pd.read_csv(in_file, header=None, sep=' ', low_memory=False).values
 result = pd.DataFrame(mut_feat[:,1:6], columns=['chr','loc0', 'loc1','ref','target'])
 X_test = mut_feat[:,6:]
 clfkit, normalizer = load_from_pickle(model_file, workpath)
-y_pred, y_score = predictor_series(X_test, clfkit, normalizer)
+y_pred, y_score = predictor_series(X_test, clfkit[0], normalizer)
 result['prediction'] = y_pred
 result['probability'] = y_score
-result.to_csv(path.join(workpath, result_file), index=False, sep='\t')
+result.to_csv(result_file, index=False, sep='\t')
 

@@ -52,12 +52,12 @@ class MagicDict(dict):
             value = self[item] = type(self)()
             return value
 
-def readData(file_path, caller):
-    data = pd.read_csv(file_path, header=None, sep=' ', low_memory=False)
-    if caller == 'gatk' or caller == 'mf':
-        return data.iloc[:, 6:].values
-    else:
-        return data.iloc[:, 11:-2].values
+# def readData(file_path, caller):
+    # data = pd.read_csv(file_path, header=None, sep=' ', low_memory=False)
+    # if caller == 'gatk' or caller == 'mf':
+        # return data.iloc[:, 6:].values
+    # else:
+        # return data.iloc[:, 11:-2].values
 
 
 

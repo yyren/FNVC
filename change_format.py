@@ -10,7 +10,7 @@ convert the vcf record to FNVC tensor format
 '''
 
 import get_vcf_features
-import get_bam_features
+#import get_bam_features
 import re
 import os
 
@@ -20,12 +20,9 @@ def merge_gatk_bam_features(gatk_tensor,bam_tensor,out_merged):
     merge_cmd=' '.join(['perl',str(script),gatk_tensor,bam_tensor,out_merged])
     os.system(merge_cmd)
 
-def make_tensor(vcf_file,model,variant_type,bam_file="input.bam",ref_fasta="hg19.fa",tag='0'):
-    data_path=os.path.abspath(os.path.dirname(vcf_file))
-    fvc_tensor=os.path.join(data_path,str(variant_type)+'_feature.record')
-    tensor_seqcontext_abs_path=os.path.join(data_path,str(variant_type)+'_seqcontext.record')
-    #print(fvc_tensor)
-    get_vcf_features.out_record(vcf_file,fvc_tensor, tag, model)
+def make_tensor(vcf_file,caller,out_file,bam_file="input.bam",ref_fasta="hg19.fa",tag='0'):
+    get_vcf_features.out_record(vcf_file,out_file, tag, caller)
+    
     # if model == 'gatk':
         # get_gatk_features.out_record(vcf_file,fvc_tensor, tag, model)
     # elif model == 'bam':
@@ -43,4 +40,4 @@ def make_tensor(vcf_file,model,variant_type,bam_file="input.bam",ref_fasta="hg19
         # os.remove(bam_seqContext_tensor)
         # os.remove(gatk_feature_tensor)
         # os.remove(bam_feature_tensor)
-    return(str(fvc_tensor))
+    return(str(out_file))
