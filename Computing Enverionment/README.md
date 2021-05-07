@@ -12,7 +12,7 @@ http://bmap.sjtu.edu.cn/softstorage/details/21
 
 Docker image for FNVC
 ------------
-http://bmap.sjtu.edu.cn/softstorage/details/22
+http://bmap.sjtu.edu.cn/softstorage/details/23
 
 ![](../Pictures/FNVC_docker_image.png)<br>
 
@@ -40,6 +40,7 @@ Perl Requirements
 ------------
 * perl v5.0
 * Getopt::Long
+* File::Spec
 * FindBin
 * other customized models (###.pm) are released in FNVC folder
 
